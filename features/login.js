@@ -5,7 +5,7 @@ const username = 'demoautomation';
 const password = 'Demoautomation01!';
 
 
-fixture `First Test`// declare the fixture
+fixture `Login Test`// declare the fixture
     .page(urlBase)
     
 
