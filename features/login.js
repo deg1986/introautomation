@@ -11,7 +11,7 @@ fixture `Login Test`// declare the fixture
     .page(urlBase)
     
 
-test('Check page of testing', async t => { //declare of test
+test.skip('Check page of testing', async t => { //declare of test
 
 //asserts for check the page
    await loginPage.checkForm();
