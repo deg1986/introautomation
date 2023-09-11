@@ -20,4 +20,5 @@ test('Check page of testing', async t => { //declare of test
     
     await loginPage.completeLoginForm(username,password);
     await loginPage.clickLoginButton();
+    await loginPage.checkLoginOK();
 });

@@ -6,6 +6,7 @@ export default class Page {
     this.inputUserName = Selector('#userName');
     this.inputPassword = Selector('input').withAttribute('type','password');
     this.buttonLogin = Selector('#login');
+    this.btn = Selector('button');
   }
 
 async checkForm(){
@@ -30,6 +31,11 @@ async completeLoginForm(user, pass){
 async clickLoginButton(){
     await t
         .click(this.buttonLogin);
+}
+
+async checkLoginOK(){
+  await t
+    .expect(this.btn.withText('Login').exists).notOk('Login Exists');
 }
 
     
